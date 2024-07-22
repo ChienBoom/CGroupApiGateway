@@ -30,13 +30,6 @@ namespace CIdentity.Controllers
             _appDbContext = appDbContext;
         }
 
-        [HttpGet]
-        [Route("test")]
-        public string Test()
-        {
-            return "AUTH - TEST";
-        }
-
         [HttpPost]
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] UserLogin model)

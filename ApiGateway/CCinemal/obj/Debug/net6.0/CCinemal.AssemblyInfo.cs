@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CCinemal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43f7716d29f8efd9e4215354bed359fe83d743ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54599db25ef0d202e2c478f79ec1172c03308bea")]
 [assembly: System.Reflection.AssemblyProductAttribute("CCinemal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CCinemal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
