@@ -6,15 +6,15 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5001
+          "Port": 6221
         }
       ],
       "UpstreamPathTemplate": "/cshop-gateway/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //}
     },
     {
       "DownstreamPathTemplate": "/ccinemal-api/{everything}",
@@ -22,15 +22,15 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 6001
+          "Port": 6222
         }
       ],
       "UpstreamPathTemplate": "/ccinemal-gateway/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //}
     },
     {
       "DownstreamPathTemplate": "/auth-api/{everything}",
@@ -38,7 +38,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7001
+          "Port": 6223
         }
       ],
       "UpstreamPathTemplate": "/auth-gateway/{everything}",

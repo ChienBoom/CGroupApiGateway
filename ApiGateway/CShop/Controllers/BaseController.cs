@@ -24,7 +24,7 @@ namespace CShop.Controllers
         }
 
         [HttpGet("{id}")]
-        public virtual async Task<ActionResult<T>> Get(int id)
+        public virtual async Task<ActionResult<T>> Get(Guid id)
         {
             var item = await _dbSet.FindAsync(id);
             if (item == null)
@@ -43,7 +43,7 @@ namespace CShop.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] T updatedItem)
+        public async Task<IActionResult> Put(Guid id, [FromBody] T updatedItem)
         {
             if ((updatedItem as dynamic).Id != id)
             {
@@ -57,7 +57,7 @@ namespace CShop.Controllers
         }
 
         [HttpDelete("{id}")]
-        public virtual async Task<IActionResult> Delete(int id)
+        public virtual async Task<IActionResult> Delete(Guid id)
         {
             var item = await _dbSet.FindAsync(id);
             if (item == null)
