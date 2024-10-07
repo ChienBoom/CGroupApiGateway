@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCinemal", "CCinemal\CCinem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CIdentity", "CIdentity\CIdentity.csproj", "{F613C93B-FBB8-491E-9058-2E8A6BA39EAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocket", "WebSocket\WebSocket.csproj", "{15220DBE-7909-4DD7-B978-47331E983B2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F613C93B-FBB8-491E-9058-2E8A6BA39EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F613C93B-FBB8-491E-9058-2E8A6BA39EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F613C93B-FBB8-491E-9058-2E8A6BA39EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15220DBE-7909-4DD7-B978-47331E983B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15220DBE-7909-4DD7-B978-47331E983B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15220DBE-7909-4DD7-B978-47331E983B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15220DBE-7909-4DD7-B978-47331E983B2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

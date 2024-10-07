@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mFkdF1ZhcV8wYffKo7MzwpiQNTEfYfrxSguoxiaH3fdvhPcIy1R8MHbbbJA3FUD0aU6XI5bhIahJQq6K8VsEKw==",
+  "dgSpecHash": "u5k64gWpWKKnh4nZvVYK+2Vv/QkIO26fAEOEo7gYtjYsmBwYHQlrM3l5+L5HrdukZQCoMw6RgxlaqqPAQIp0Pw==",
   "success": true,
   "projectFilePath": "E:\\MyProject\\CGroup\\CGroupApiGateway\\ApiGateway\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
@@ -73,7 +73,11 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D37zxNulapEauDHZ+hD2koNLSVwYYZpqw8iXaDyPvSC03bczlltf2rPkEtQCyeimIiFWQYYgGNmMBu6m280Otg==",
+  "dgSpecHash": "FjeMYuYHw320hF2qOdnX7VlKuDDyd7RgWzmFS3ip04QZDiZvwF4sVhx7FLrFsH1QhBwvUo8PrM4zLyLp1fMoKw==",
   "success": true,
   "projectFilePath": "E:\\MyProject\\CGroup\\CGroupApiGateway\\ApiGateway\\CCinemal\\CCinemal.csproj",
   "expectedPackageFiles": [
@@ -59,7 +59,11 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
   ],
   "logs": []
 }
