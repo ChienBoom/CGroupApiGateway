@@ -18,15 +18,33 @@ namespace CShop.Controllers
         }
 
         [HttpGet]
-        public virtual async Task<ActionResult<IEnumerable<T>>> GetAll()
+        public virtual async Task<ActionResult<IEnumerable<T>>> GetAll([FromQuery] string[] includes = null)
         {
-            return Ok(await _dbSet.ToListAsync());
+            IQueryable<T> query = _dbSet;
+
+            if (includes != null && includes.Length > 0)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            return Ok(await query.ToListAsync());
         }
 
         [HttpGet("{id}")]
-        public virtual async Task<ActionResult<T>> Get(Guid id)
+        public virtual async Task<ActionResult<T>> Get(Guid id, [FromQuery] string[] includes = null)
         {
-            var item = await _dbSet.FindAsync(id);
+            IQueryable<T> query = _dbSet;
+            if (includes != null && includes.Length > 0)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            var item = await query.FirstOrDefaultAsync(entity => EF.Property<Guid>(entity, "Id") == id);
+            //var item = await _dbSet.FindAsync(id);
             if (item == null)
             {
                 return NotFound();

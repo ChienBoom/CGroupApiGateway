@@ -13,7 +13,7 @@ namespace CShop.Entities
         public Guid Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public string NumberProduct { get; set; }
+        public int NumberProduct { get; set; }
         public string PictureUrl { get; set; }
         public string Status { get; set; }
         [MaxLength(2000)]

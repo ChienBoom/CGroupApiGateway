@@ -19,6 +19,7 @@ namespace CShop.Entities
         public Guid SupplierId { get; set; }
         [Required]
         public Guid BrandId { get; set; }
+        public string PictureUrl { get; set; }
         public int NumberSold { get; set; }
         public int NumberStock { get; set; }
         public double Star {  get; set; }
