@@ -18,9 +18,10 @@ namespace CShop.Controllers
         }
 
         [HttpGet]
-        public virtual async Task<ActionResult<IEnumerable<T>>> GetAll([FromQuery] string[] includes = null)
+        public virtual async Task<ActionResult<IEnumerable<T>>> GetAll([FromQuery] string[] includes = null, [FromQuery] int skip = 0, [FromQuery] int top = 9999)
         {
             IQueryable<T> query = _dbSet;
+            int totalCount = await query.CountAsync();
 
             if (includes != null && includes.Length > 0)
             {
@@ -29,7 +30,15 @@ namespace CShop.Controllers
                     query = query.Include(include);
                 }
             }
-            return Ok(await query.ToListAsync());
+            var data = await query.Skip(skip * top).Take(top).ToListAsync();
+            int count = await query.Skip(skip * top).Take(top).CountAsync();
+            var response = new
+            {
+                totalCount = totalCount,
+                data = data,
+                count = count
+            };
+            return Ok(response);
         }
 
         [HttpGet("{id}")]

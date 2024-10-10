@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b160eb84c68f813fa58fcbf8096bd1b98ebdaf37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82c4281a2d8092929e1ad15cae14080730ba6a00")]
 [assembly: System.Reflection.AssemblyProductAttribute("CShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
