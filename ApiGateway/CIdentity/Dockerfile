@@ -8,15 +8,15 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["CIdentity/CIdentity.csproj", "CIdentity/"]
-RUN dotnet restore "./CIdentity/CIdentity.csproj"
+COPY ["CIdentity.csproj", "./"]
+RUN dotnet restore "CIdentity.csproj"
 COPY . .
-WORKDIR "/src/CIdentity"
-RUN dotnet build "./CIdentity.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src"
+RUN dotnet build "CIdentity.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./CIdentity.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "CIdentity.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

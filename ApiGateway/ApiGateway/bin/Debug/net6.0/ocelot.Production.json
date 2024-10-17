@@ -2,10 +2,10 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/cshop-api/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "192.168.1.94",
           "Port": 4225
         }
       ],
@@ -18,10 +18,10 @@
     },
     {
       "DownstreamPathTemplate": "/ccinemal-api/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "192.168.1.94",
           "Port": 6222
         }
       ],
@@ -34,10 +34,10 @@
     },
     {
       "DownstreamPathTemplate": "/auth-api/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "192.168.1.94",
           //"Port": 6223
           "Port": 4226
         }

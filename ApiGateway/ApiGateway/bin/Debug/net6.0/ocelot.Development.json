@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "localhost",
           "Port": 4225
         }
       ],
@@ -21,7 +21,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "localhost",
           "Port": 6222
         }
       ],
@@ -37,7 +37,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "localhost",
           //"Port": 6223
           "Port": 4226
         }
