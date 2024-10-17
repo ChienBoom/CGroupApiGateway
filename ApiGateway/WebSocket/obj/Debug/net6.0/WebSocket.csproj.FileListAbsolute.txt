@@ -33,3 +33,4 @@ E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\WebSocket\obj\Debug\net6.0\refin
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\WebSocket\obj\Debug\net6.0\WebSocket.pdb
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\WebSocket\obj\Debug\net6.0\WebSocket.genruntimeconfig.cache
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\WebSocket\obj\Debug\net6.0\ref\WebSocket.dll
+E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\WebSocket\bin\Debug\net6.0\appsettings.Production.json

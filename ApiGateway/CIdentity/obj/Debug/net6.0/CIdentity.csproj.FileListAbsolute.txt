@@ -74,3 +74,4 @@ E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\CIdentity\obj\Debug\net6.0\refin
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\CIdentity\obj\Debug\net6.0\CIdentity.pdb
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\CIdentity\obj\Debug\net6.0\CIdentity.genruntimeconfig.cache
 E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\CIdentity\obj\Debug\net6.0\ref\CIdentity.dll
+E:\MyProject\CGroup\CGroupApiGateway\ApiGateway\CIdentity\bin\Debug\net6.0\appsettings.Production.json

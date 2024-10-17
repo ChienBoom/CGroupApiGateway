@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NhrK5VsBhn39XAQiQq5HkoNYyQxEmTpU1ZcO2RCgDEdOkJ9CBMBz7ahvXb3VjadbenVJwmvdkSub2HQOxnKoIw==",
+  "dgSpecHash": "74nPjIRaMeylyb5Ta72wk5tSpSH8HAd1tx9ni7xI8G78ptfqJPVu6MjO5/dNQ2M4XBmQbwvfndf0K+who1sSFg==",
   "success": true,
   "projectFilePath": "E:\\MyProject\\CGroup\\CGroupApiGateway\\ApiGateway\\CIdentity\\CIdentity.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
