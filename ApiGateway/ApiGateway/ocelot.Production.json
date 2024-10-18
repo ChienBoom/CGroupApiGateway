@@ -47,6 +47,9 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:7209"
+    "BaseUrl": "http://192.168.1.94:4001",
+    "LoadBalancerOptions": {
+      "Type": "RoundRobin"
+    }
   }
 }

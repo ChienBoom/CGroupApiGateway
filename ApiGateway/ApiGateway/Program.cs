@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
@@ -9,7 +10,19 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 //Config Ocelot
-IConfiguration configuration = new ConfigurationBuilder().AddJsonFile("ocelot.json").Build();
+var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+var configOcelot = new ConfigurationBuilder();
+if (environment == "Production")
+{
+    configOcelot.AddJsonFile("ocelot.Production.json");
+}
+else
+{
+    configOcelot.AddJsonFile("ocelot.Development.json");
+}
+IConfiguration configuration = configOcelot.Build();
+
+
 
 // Adding Authentication/
 builder.Services.AddAuthentication(options =>
