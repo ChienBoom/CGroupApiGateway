@@ -98,10 +98,10 @@ namespace CIdentity.Controllers
             var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)
                 return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
-            //if (!await _roleManager.RoleExistsAsync(UserRole.Admin))
-            //    await _roleManager.CreateAsync(new IdentityRole(UserRole.Admin));
-            //if (!await _roleManager.RoleExistsAsync(UserRole.User))
-            //    await _roleManager.CreateAsync(new IdentityRole(UserRole.User));
+            if (!await _roleManager.RoleExistsAsync(UserRole.Admin))
+                await _roleManager.CreateAsync(new IdentityRole(UserRole.Admin));
+            if (!await _roleManager.RoleExistsAsync(UserRole.User))
+                await _roleManager.CreateAsync(new IdentityRole(UserRole.User));
             await _userManager.AddToRoleAsync(user, UserRole.Admin);
             await _userManager.AddToRoleAsync(user, UserRole.User);
             return Ok(new Response { Status = "Success", Message = "User created successfully!" });

@@ -1,5 +1,6 @@
 ﻿using CShop.Auth;
 using CShop.Entities;
+using CShop.EventHandle;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,18 +14,21 @@ namespace CShop.Controllers
             _context = context;
         }
 
-        //[HttpGet("{id}")]
-        //public override async Task<ActionResult<Brand>> Get(int id)
-        //{
-        //    var product = await _context.Brand
-        //                                .Include(p => p.P) // giả sử có một liên kết đến Category
-        //                                .FirstOrDefaultAsync(p => p.Id == id);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(product);
-        //}
+        [HttpGet("/testSendMessage")]
+        public async Task<IActionResult> TestSendMessage(string message)
+        {
+            var producer = new EventProducer();
+            var mes = producer.SendMessage(message);
+            return Ok(mes);
+        }
+
+        [HttpGet("/testReceiveMessage")]
+        public async Task<IActionResult> TestReceiveMessage()
+        {
+            var consummer = new EventConsumer();
+            var mes = consummer.ReceiveMessage();
+            return Ok(mes);
+        }
 
     }
 }

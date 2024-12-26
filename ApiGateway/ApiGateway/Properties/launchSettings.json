@@ -16,7 +16,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    }
+    },
     //"Container (Dockerfile)": {
     //  "commandName": "Docker",
     //  "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",

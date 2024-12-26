@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "192.168.1.14",
           "Port": 4225
         }
       ],
@@ -21,7 +21,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "192.168.1.14",
           "Port": 6222
         }
       ],
@@ -33,11 +33,27 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/chat-api/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.1.14",
+          "Port": 4226
+        }
+      ],
+      "UpstreamPathTemplate": "/chat-gateway/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
       "DownstreamPathTemplate": "/auth-api/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "192.168.1.94",
+          "Host": "192.168.1.14",
           //"Port": 6223
           "Port": 4226
         }
@@ -47,7 +63,7 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://192.168.1.94:4001",
+    "BaseUrl": "http://192.168.1.14:4001",
     "LoadBalancerOptions": {
       "Type": "RoundRobin"
     }
