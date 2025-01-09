@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Chat.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using System.Text;
 using System.Text.Json;
@@ -21,9 +22,8 @@ namespace Chat.Controllers
 
         [HttpPost]
         [Route("chat")]
-        public async Task<IActionResult> ChatAsync()
+        public async Task<IActionResult> ChatAsync([FromBody] ChatRequest chatRequest)
         {
-            string request = "bạn có biết về ngôn ngữ python?";
             var url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDQ5WbPCK02MSYkSqLdsDsQNVcszxs4W4Q";
             var body = new
             {
@@ -33,7 +33,7 @@ namespace Chat.Controllers
                         role = "user",
                         parts = new[]
                         {
-                            new { text = request }
+                            new { text = chatRequest.question }
                         }
                     }
             }

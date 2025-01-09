@@ -1,5 +1,6 @@
 ﻿using CIdentity.Auth;
 using CIdentity.Models;
+using CIdentity.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -17,18 +18,67 @@ namespace CIdentity.Controllers
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
         private readonly AppDbContext _appDbContext;
+        private readonly RedisService _redisService;
 
         public AuthController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
             IConfiguration configuration,
-            AppDbContext appDbContext)
+            AppDbContext appDbContext,
+            RedisService redisService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
             _appDbContext = appDbContext;
+            _redisService = redisService;
         }
+
+        [HttpGet]
+        [Route("testredis")]
+        public IActionResult TestRedis()
+        {
+            try
+            {
+                _redisService.SetDataAsync("Test", "Minh");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("testgetredis")]
+        public IActionResult TestGetRedis()
+        {
+            try
+            {
+                var rs = _redisService.GetDataAsync("Test");
+                return Ok(rs.Result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("testgetallredis")]
+        public IActionResult TestGetAllRedis()
+        {
+            try
+            {
+                var rs = _redisService.GetAllKey();
+                return Ok(rs.Result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
         [HttpPost]
         [Route("login")]

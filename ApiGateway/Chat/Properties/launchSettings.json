@@ -11,8 +11,8 @@
   "profiles": {
     "Chat": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
+      //"dotnetRunMessages": true,
+      //"launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7228;http://localhost:5124",
       "environmentVariables": {

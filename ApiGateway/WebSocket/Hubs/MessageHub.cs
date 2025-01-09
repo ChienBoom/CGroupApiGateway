@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using System.Collections.Concurrent;
+using WebSocket.Models;
 
 namespace WebSocket.Hubs
 {
@@ -31,10 +32,10 @@ namespace WebSocket.Hubs
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
 
-        public async Task ConfirmClientName(string connectionId, string clientName)
+        public async Task ConfirmClientName(ClientInfo client)
         {
-            _connections.TryAdd(connectionId, clientName);
-            Console.WriteLine("ConnectionId: " + connectionId + " - ClientName: " + clientName);
+            _connections.TryAdd(client.ConnectionId, client.Name);
+            Console.WriteLine("ConnectionId: " + client.ConnectionId + " - ClientName: " + client.Name);
         }
 
         public void GetClients()
